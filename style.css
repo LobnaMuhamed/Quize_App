@@ -1,24 +1,77 @@
-body{
-  background-color: #eee;
+body {
+  background: linear-gradient(
+    90deg,
+    hsla(208, 33%, 21%, 1) 0%,
+    hsla(211, 36%, 46%, 1) 100%
+  );
 }
-.grid
-{
+.grid {
   width: 600px;
   height: 500px;
   margin: 0 auto;
-  background-color: #fff;
+  background: linear-gradient(90deg, #9bafd9 0%, #103784 100%);
   padding: 10px 50px 50px 50px;
   border-radius: 50px;
-  border: 1px solid #cbcbcb;
-  box-shadow: 10px 15px 5px #cbcbcb;
+  border: 1px solid #1f487e;
+  box-shadow: 2px 5px 25px #fff;
 }
 
 .grid h1 {
   font-family: sans-serif;
-  background-color: #57636E;
+  background-color: #00458e;
+  box-shadow: 2px 5px 25px #fff;
   font-size: 60px;
   text-align: center;
   color: #fff;
   padding: 2px 0px;
   border-radius: 50px;
+  cursor: default;
+  transition: 0.5s linear;
+}
+.grid h1:hover {
+  transform: scale(1.08);
+  color: #9bafd9;
+}
+.grid #question {
+  font-family: sans-serif;
+  font-size: 30px;
+  color: rgb(14, 41, 54);
+  font-weight: 700;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.buttons button {
+  width: 250px;
+  font-size: 20px;
+  color: #1d3c6a;
+  border: 1px solid #1d3c6a;
+  border-radius: 50px;
+  margin: 10px 40px 10px 0;
+  padding: 10px;
+  transition: 0.5s linear all;
+  cursor: pointer;
+}
+.buttons button:hover {
+  background-color: #1d3c6a;
+  border: 1px solid #fff;
+  transform: scale(1.1);
+  color: #fff;
+}
+#score {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+}
+#progress {
+  color: #2b2b2b;
+  font-size: 18px;
+}
+
+footer p#progress {
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
 }
