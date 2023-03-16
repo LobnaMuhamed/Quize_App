@@ -5,6 +5,6 @@ class Question {
     this.answer = answer;
   }
   correctAnswer(choice) {
-    return (choice = this.answer);
+    return (choice === this.answer);
   }
 }

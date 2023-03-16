@@ -25,7 +25,7 @@ function guess(id, guess) {
   };
 }
 function showProgress() {
-  var currentQuestionNumber = quiz.questionIndex +1 ;
+  var currentQuestionNumber = quiz.questionIndex + 1 ;
   var element = document.getElementById("progress");
   element.innerHTML = `Question ${currentQuestionNumber} of ${quiz.questions.length}`;
 
@@ -50,7 +50,7 @@ var questions = [
   ),
   new Question(
     "There are _____ main components of object oriented programmin.",
-    ["1", "6", "2", "4"],
+    [1, 6, 2, 4],
     4
   ),
   new Question(
